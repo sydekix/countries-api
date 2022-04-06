@@ -1,0 +1,15 @@
+<%- include('../partials/header') %>
+
+    <main class="main container">
+        <div class="row">
+            <h2 class="col-12"><%= name %></h2>
+            <section class="section row">
+                <p>Abbreviation: <%= data.abbreviation %></p>
+                <p>Capital: <%= data.capital %></p>
+                <p>Currency: <%= data.currency %></p>
+                <p>Phone: <%= data.phone %></p>
+                <p>Population: <%= data.population %></p>
+            </section>
+        </div>
+    </main>
+<%- include('../partials/footer') %>

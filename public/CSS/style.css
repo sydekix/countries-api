@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(164, 158, 158)
+}
+
+.country-spacing {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.nav {
+    background-color: yellow;
+    margin-bottom: 50px;
+}
+
+.header {
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+.header a {
+    text-decoration: none;
+}

@@ -1,0 +1,23 @@
+<%- include('../partials/header'); %>
+
+    <main class="main container">
+        <div class="row">
+            <% data.forEach(item => { %>
+                <div class="col-md-4">
+                    <a href="/countries/<%= item.id %>">
+                        <h2><%= item.name %></h2>
+                        <p>Abbreviation: <%= item.abbreviation %></p>
+                        <p>Capital: <%= item.capital %></p>
+                        <p>Currency: <%=item.currency %></p>
+                        <p>Phone: <%= item.phone %></p>
+                        <p>Population: <%= item.population %></p>
+                        <img class="img-fluid" src="<%= item.media.flag %>" alt="<%= item.name %> flag">
+                        <img class="img-fluid" src="<%= item.media.emblem %>" alt="<%= item.name %> emblem">
+                        <img class="img-fluid" src="<%= item.media.orthographic %>" alt="<%= item.name %> orthographic">
+
+                    </a>
+                </div>
+            <% }) %>
+        </div>
+    </main>
+<%- include('../partials/footer'); %>
